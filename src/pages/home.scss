@@ -1,12 +1,7 @@
 @import "../shared/helper";
 
-.home {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #010310;
-  color: white;
+.home {flex: 1;height: 100%;display: flex;flex-direction: column;
+  background: #010310; color: white;
   > header {
     height: px(99);
     background-size: cover;
@@ -20,9 +15,7 @@
       "box3 box3 box4 box5" 363fr / 366fr 361fr 811fr 747fr;
     grid-column-gap: px(28);
     grid-row-gap: px(28);
-    > section {
-      text-align: center;
-    }
+    > section {text-align: center;}
     .bordered {
       border: 1px solid #0764bc;
       border-radius: 4px;
