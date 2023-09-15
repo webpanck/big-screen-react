@@ -10,7 +10,7 @@ export const Chart1 = () => {
     var myChart = echarts.init(divRef.current);
     myChart.setOption(createEchartsOptions({
       xAxis: {
-        data: ['兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区'],
+        data: ['城关区', '七里河区', '西固区', '安宁区', '红古区', '永登县', '榆中县', '皋兰县', '兰州新区'],
         axisTick: {show: false},
         axisLine: {
           lineStyle: {color: '#083B70'}
