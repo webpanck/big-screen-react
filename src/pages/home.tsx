@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
 import {Chart1} from '../components/chart-1';
@@ -21,7 +21,7 @@ export const Home = () => {
           <Chart1/>
           <Chart2/>
         </section>
-        <section className="bordered section2">
+        <section className="section2">
           <Chart3/>
           <Chart4/>
         </section>
@@ -29,19 +29,36 @@ export const Home = () => {
           <Chart5/>
         </section>
         <section className="section4">
-          <Chart6/><div className="bordered 年龄段">
-          <h2>犯罪人员年龄段分布</h2>
-          <div className="charts">
-            <Chart7/>
-            <Chart8/>
-            <Chart9/>
+          <Chart6/>
+          <div className="bordered 年龄段">
+            <h2>犯罪人员年龄段分布</h2>
+            <div className="charts">
+              <Chart7/>
+              <Chart8/>
+              <Chart9/>
+            </div>
           </div>
-        </div>
         </section>
-        <section className="bordered section5"></section>
+        <section className="section5">
+          <div className="bordered row1 案发类型">
+            <h2>案发类型统计</h2>
+            <div className="charts">
+
+            </div>
+          </div>
+          <div className="bordered row2 案发街道">
+            <h2>案发街道统计</h2>
+            <div className="charts">
+
+            </div>
+          </div>
+          <div className="bordered row3 作案手段">
+            <h2>作案手段分析</h2>
+          </div>
+        </section>
       </main>
       <footer>
-        &copy; PCK 2020-{year}
+        &copy; 饥人谷 2020-{year}
       </footer>
     </div>
   );
