@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
 
+rm -rf dist &&
 yarn build &&
 cd dist &&
 git init &&
 git add . &&
-git commit -m deploy &&
-git remote add origin git@github.com:FrankFang/Se1uqKnmKDZS.git &&
-git push -uf origin master:gh-pages &&
-cd -;
+git commit -m "update" &&
+git branch -M main &&
+git remote add origin git@github.com:webpanck/big-screen-react-preview.git &&
+git push -f -u origin main &&
+cd -
